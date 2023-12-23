@@ -1,0 +1,57 @@
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    -moz-user-select: none;
+    font-family: Arial, serif;
+    background: #6ECFF6;
+}
+
+p {
+    text-align: center;
+    font-size: larger;
+    color: white;
+}
+
+img {
+    border: white 0.5rem solid;
+    border-radius: 1rem;
+    margin-bottom: 1rem;
+    zoom: 0.5;
+    pointer-events: none;
+}
+
+#downloadLatestVersionBtn {
+    background-color: white;
+    color: #6ECFF6;
+    border-radius: 1rem;
+    padding: 0.75rem 1.75rem;
+    font-size: 1rem;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    animation: scaleUp 0.5s ease-in-out;
+}
+
+#downloadLatestVersionBtn:hover {
+    background-color: azure;
+}
+
+@keyframes scaleUp {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.25);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
